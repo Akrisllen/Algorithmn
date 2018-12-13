@@ -60,7 +60,7 @@ public class MergeSort extends Sorting{
 	
 	private void insertSort(Comparable[] arr) {
 		for(int i=0;i<arr.length;i++) {
-			for(int j=i;j>=0;j--) {
+			for(int j=i;j>0;j--) {
 				if(compareTo(arr[j-1],arr[j])) {
 					swap(arr,j-1,j);
 				}else {
