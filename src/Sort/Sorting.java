@@ -1,4 +1,4 @@
-package algorithmn;
+package Sort;
 
 public abstract class Sorting {
 	
@@ -6,7 +6,7 @@ public abstract class Sorting {
 	protected int compareCount = 0;
 	
 	public abstract void sort(Comparable[] arr);
-	public abstract void sortImproved(Comparable[] arr);
+	public void sortImproved(Comparable[] arr) {};
 	
 	// if a>b return true; if a<=b return false
 	protected boolean compareTo(Comparable a, Comparable b) {

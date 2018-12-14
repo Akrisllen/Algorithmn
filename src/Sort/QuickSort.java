@@ -1,8 +1,8 @@
-package algorithmn;
+package Sort;
 
 public class QuickSort extends Sorting{
 
-	/* Normal Input */
+	/** Normal Input **/
 	public void sort(Comparable[] arr) {
 		sort(arr,0,arr.length-1);
 	}

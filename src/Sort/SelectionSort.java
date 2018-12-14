@@ -1,4 +1,4 @@
-package algorithmn;
+package Sort;
 
 public class SelectionSort extends Sorting{
 

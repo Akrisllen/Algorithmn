@@ -1,14 +1,14 @@
-package algorithmn;
+package Sort;
 
 public class MyMain {
 
 	public static void main(String[] args) {
 		Comparable[] increaseArr = {1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20};
 		Comparable[] decreaseArr = {40,39,38,37,36,35,34,33,32,31,30,29,28,27,26,25,24,23,22,21,20};
-		Comparable[] randomArr = generateArray(8000);
+		Comparable[] randomArr = generateArray(10);
 		
-		Comparable[] arr = randomArr;
-		Sorting sort = new QuickSort();
+		Comparable[] arr = {4,3,0,1};
+		Sorting sort = new BubbleSort();
 		
 		long startTime = System.currentTimeMillis();
 		sort.sortImproved(arr);

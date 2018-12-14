@@ -1,4 +1,4 @@
-package algorithmn;
+package Sort;
 
 public class BubbleSort extends Sorting{
 	
@@ -15,23 +15,17 @@ public class BubbleSort extends Sorting{
 
 	/** Improved Bubble Sort **/
 	public void sortImproved(Comparable[] arr) {
-		int pos = -1;
 		boolean swapped = false;
-		for (int i = 0; i < arr.length; i++) {
-			if (pos == i)
-				continue;
+		int i = 0;
+		do  {
 			for (int j = 0; j < arr.length - 1 - i; j++) {
-				pos = j;
 				if (compareTo(arr[j], arr[j + 1])) {
 					swap(arr, j, j + 1);
 					swapped = true;
-					pos = -1;
 				}
 			}
-			if (!swapped) {
-				continue;
-			}
-		}
+			if(!swapped) continue;
+		}while(i++ < arr.length);
 	}
 
 	/** Advanced Bubble Sort **/

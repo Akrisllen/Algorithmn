@@ -1,4 +1,4 @@
-package algorithmn;
+package Sort;
 
 public class MergeSort extends Sorting{
 
